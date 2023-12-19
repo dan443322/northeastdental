@@ -30,7 +30,7 @@
       box-sizing: border-box;
       border-width: 0;
       border-style: solid;
-      /* outline: 1px solid red; */
+      outline: 1px solid red;
 
     }
 
@@ -149,6 +149,8 @@
       }
     }
   </style>
+
+  <script src="navbarEffects.js" defer></script>
 </head>
 
 <body>
@@ -158,11 +160,11 @@
 
     <div class="home-container">
 
-      <section class="home-hero">
+      <section class="home-hero" id="home">
         <header data-thq="thq-navbar" class="home-navbar">
           <div class="home-left">
             <img alt="image" src="public/external/paste-1500w.png" class="home-logo" />
-            <nav class="home-links">
+            <nav id="topNavbar" class="home-links" id="home-links">
               <a href="#features" class="home-link">About</a>
               <a href="#how-it-works" class="home-link01">Services</a>
               <span class="home-link02">Reviews</span>
@@ -183,7 +185,7 @@
                 <span class="home-text09">Book an appointment</span>
               </button></a>
           </div>
-          <div data-thq="thq-burger-menu" class="home-burger-menu">
+          <div data-thq="thq-burger-menu" class="home-burger-menu" id="home-burger-menu">
             <svg viewBox="0 0 1024 1024" class="home-icon1">
               <path
                 d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z">
@@ -232,7 +234,7 @@
             </button>
           </div>
           <div class="home-image10">
-            <img alt="image" src="public/Doctors/riccutie.png" class="home-image11"
+            <img alt="image" src="public/Doctors/doctor-image-1500w.png" class="home-image11"
               style="height: 560px; width: auto; object-fit: cover;" />
           </div>
         </div>
@@ -289,7 +291,7 @@
         </div>
       </section>
 
-      <section class="home-features1">
+      <section class="home-features1" id="blog">
         <div class="home-section6">
           <div class="home-content04">
             <div class="home-header12">
@@ -353,7 +355,7 @@
       </section>
 
 
-      <section class="home-practices1">
+      <section class="home-practices1" id="services">
         <div class="home-heading08">
           <h2 class="home-text18">Services we Offer</h2>
           <p class="home-text19">
@@ -370,8 +372,9 @@
                     <h3 class="practice-header"><span>Consultation</span></h3>
                     <p class="practice-caption">
                       <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt.
+                        Have a consultation at our dental clinic to discuss your oral health needs and explore your
+                        treatment options.
+
                       </span>
                     </p>
                   </div>
@@ -391,8 +394,9 @@
                     </h3>
                     <p class="practice-caption">
                       <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt.
+                        Periapical X-ray shows your entire tooth, from the crown to the root tip. This type of X-ray
+                        helps to detect decay, gum disease, bone loss and any other abnormalities of your tooth or
+                        surrounding bone.
                       </span>
                     </p>
                   </div>
@@ -412,8 +416,7 @@
                     </h3>
                     <p class="practice-caption">
                       <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt.
+                        Tooth extraction is a procedure to remove a tooth from the gum socket.
                       </span>
                     </p>
                   </div>
@@ -433,8 +436,9 @@
                     </h3>
                     <p class="practice-caption">
                       <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt.
+                        Tooth whitening is a procedure aimed at lightening the color of teeth and removing stains and
+                        discoloration.
+
                       </span>
                     </p>
                   </div>
@@ -454,8 +458,10 @@
                     </h3>
                     <p class="practice-caption">
                       <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt.
+                        Dental braces are devices used in orthodontics that align and straighten teeth and help position
+                        them with regard to a
+                        person's bite, while also aiming to improve dental health.
+
                       </span>
                     </p>
                   </div>
@@ -473,8 +479,9 @@
                     <h3 class="practice-header"><span>Dentures</span></h3>
                     <p class="practice-caption">
                       <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit, sed do eiusmod tempor incididunt.
+                        Dentures are removable oral appliances that replace missing teeth. There are many types of
+                        dentures, including full,
+                        partial and implant-supported dentures.
                       </span>
                     </p>
                   </div>
@@ -637,7 +644,7 @@
             </div>
             <div class="social">
               <a href="https://www.facebook.com/messages/t/638418486786663" target="_blank"><img
-                  alt="Facebook Messenger" src="public/Icons/twitter.svg" class="home-image30" /></a>
+                  alt="Facebook Messenger" src="public/Icons/messenger-fill-svgrepo-com.svg" class="home-image30" /></a>
             </div>
           </div>
           <div class="home-legal">
@@ -652,11 +659,11 @@
           <div class="home-list1">
             <span class="home-header16">Menu</span>
             <div class="home-links1">
-              <span class="home-link04">Home</span>
-              <span class="home-link05">About</span>
-              <span class="home-link06">Blog</span>
-              <span class="home-link07">Services</span>
-              <span class="home-link08">Book an Appointment</span>
+              <span class="home-link04"><a href="#home">Home</a></span>
+              <span class="home-link05"><a href="#about">About</a></span>
+              <span class="home-link06"><a href="#blog">Blog</a></span>
+              <span class="home-link07"><a href="#services">Services</a></span>
+              <span class="home-link08"><a href="#schedule">Book an Appointment</a></span>
             </div>
           </div>
           <!-- <div class="home-list2">

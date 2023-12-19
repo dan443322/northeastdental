@@ -91,6 +91,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+  bottom: 0;
 }
 .practice-image {
   width: 12px;
@@ -473,10 +474,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.home-image06 {
-  width: 18px;
-  object-fit: cover;
-}
+
 .home-text06 {
   font-style: normal;
   font-weight: 600;
@@ -692,12 +690,10 @@
   flex-direction: column;
 }
 .home-grid1 {
-  gap: var(--dl-space-space-threeunits);
-  flex: 1;
-  display: grid;
-  align-items: flex-start;
-  flex-direction: column;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+  align-items: stretch; /* Ensures children stretch to match height */
 }
 .home-practice-wrapper {
   cursor: pointer;
@@ -1239,7 +1235,7 @@
   flex-direction: row;
   padding-bottom: var(--dl-space-space-fiveunits);
   justify-content: space-between;
-  background-color: #000000;
+  background-image: var(--black-background-gradient-1);
 }
 .home-left1 {
   gap: var(--dl-space-space-threeunits);
@@ -1484,6 +1480,11 @@
   .home-links {
     display: none;
   }
+  .home-links-js {
+    position: absolute;
+    top: 80px;
+  }
+
   .home-right {
     display: none;
   }
@@ -1492,6 +1493,7 @@
     padding: var(--dl-space-space-unit);
     border-radius: var(--dl-radius-radius-round);
     background-color: #2461ff;
+    cursor: pointer;
   }
   .home-icon1 {
     fill: white;
